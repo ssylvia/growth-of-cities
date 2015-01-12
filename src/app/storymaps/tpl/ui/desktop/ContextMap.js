@@ -15,7 +15,8 @@ define(["dojo/topic",
 		$('#context-map-helper').removeClass('active');
 	});
 
-	topic.subscribe("story-loaded-section", function(index){
+	topic.subscribe("story-load-section", function(index){
+		console.log('testing');
 		setIconDisplay(index);
 	});
 
