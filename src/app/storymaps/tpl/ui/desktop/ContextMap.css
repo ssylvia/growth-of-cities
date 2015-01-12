@@ -1,0 +1,41 @@
+#context-map{
+	position: relative;
+	width: 100%;
+	height: 25%;
+	max-height: 400px;
+	min-height: 200px;
+	margin-bottom: 2px;
+}
+
+.sectionPanel .appTitle.anchored{
+	margin-top: 5px;
+}
+
+#context-map-info{
+	display: none;
+	position: fixed;
+	background-color: #FFD700;
+	color: black;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 100;
+}
+
+#context-map-helper{
+	display: none;
+}
+
+#context-map:hover #context-map-helper.active{
+	display: block;
+	background-color: gray;
+	color: #FFD700;
+	position: absolute;
+	left: 50%;
+	margin-left: -116px;
+	bottom: 20px;
+	padding: 5px 10px;
+	border-radius: 30px;
+	cursor: pointer;
+	z-index: 30;
+}

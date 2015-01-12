@@ -7,6 +7,7 @@ define(["lib-build/css!./MainView",
 		// Desktop UI
 		"../ui/desktop/SidePanel",
 		"../ui/desktop/FloatingPanel",
+		"../ui/desktop/ContextMap",
 		// Mobile UI
 		"../ui/mobile/FloatingSwiper",
 		// Common
@@ -37,6 +38,7 @@ define(["lib-build/css!./MainView",
 		Helper,
 		SidePanel,
 		FloatingPanel,
+		ContextMap,
 		FloatingSwiper,
 		MapCommand,
 		Legend,

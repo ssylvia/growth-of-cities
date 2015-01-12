@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>The Age of Megacities</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		
@@ -16,12 +16,12 @@
 			 - create and fill out extensively an ArcGIS Online item that link to your final application
 			 - edit the following four tags as well as the title tag above on line 4
 		-->
-		<meta name="description" content="This story map was created with the Esri Tpl application in ArcGIS Online.">
+		<meta name="description" content="The world is a crowded place, with more than 7 billion people on the planet as of 2014. About half of this population lives in urban areas, and ongoing migration into city centers has given rise to the megacity—a metropolitan area with 10 million people or more.">
 		
 		<!-- Facebook sharing -->
-		<meta property="og:title" content="Story Map Journal"/>
-		<meta property="og:description" content="This story map was created with the Story Map Journal application in ArcGIS Online."/>
-		<meta property="og:image" content="resources/common/icons/esri-globe.png"/>
+		<meta property="og:title" content="The Age of Megacities"/>
+		<meta property="og:description" content="The world is a crowded place, with more than 7 billion people on the planet as of 2014. About half of this population lives in urban areas, and ongoing migration into city centers has given rise to the megacity—a metropolitan area with 10 million people or more."/>
+		<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Roppongi_aerial_at_night.jpg/1920px-Roppongi_aerial_at_night.jpg"/>
 		
 		<!-- 
 			This application is released under the Apache License V2.0 by Esri http://www.esri.com/
@@ -35,7 +35,7 @@
 			//-------------------------------------------------------------------------------------------
 			var configOptions = {
 				// Enter an application ID created through the Map Journal builder 
-				appid: "",
+				appid: "8cb27cf4d3b64f1e8cd9791211620a4d",
 				// Optionally to secure Journal's access, use an OAuth application ID (example: 6gyOg377fLUhUk6f)
 				// User will need to sign-in to access the viewer even if your application is public
 				oAuthAppId: "",
@@ -101,6 +101,12 @@
 										</td>
 									</tr>
 								</table>
+							</div>
+							<div id="context-map">
+								<p id="context-map-info">Context Tooltip</p>
+								<div id="context-map-helper" class="active">
+									Click a city to explore its growth
+								</div>
 							</div>
 							<div class="appTitle"></div>
 							<div class="separator"></div>
@@ -389,19 +395,5 @@
 		</div>
 		
 		<script type="text/javascript" src="app/main-config.js"></script>
-		<script type="text/javascript">
-			require(["dojo/topic"], function(topic) {
-				/*
-				 * Custom Javascript to be executed while the application is initializing goes here
-				 */
-				
-				// The application is ready
-				topic.subscribe("tpl-ready", function(){
-					/*
-					 * Custom Javascript to be executed when the application is ready goes here
-					 */
-				});
-			});
-		</script>
 	</body>
 </html>
